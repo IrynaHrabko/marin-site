@@ -432,11 +432,11 @@ header {
   text-decoration: none;
   white-space: nowrap;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
   font-size: 18px;
   line-height: 1.33;
+  cursor: pointer;
 }
 .btn:hover, .btn:focus {
   opacity: 0.7;
@@ -469,4 +469,59 @@ header {
 .services__desc {
   font-weight: 500;
   line-height: 1.5;
+}
+
+.about {
+  background-image: url(../img/rectangle.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #FFF;
+}
+.about__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.about__desc {
+  max-width: 625px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 43px;
+}
+.about__btn_ask {
+  margin-right: 30px;
+  padding: 8px 34px;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: inherit;
+}
+.about__btn_ask:hover, .about__btn_askfocus {
+  background-color: #208888;
+}
+.about__btn_ask:active {
+  background-color: #48adad;
+  opacity: 0.7;
+}
+.about__btn_transparent {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  border: 3px solid #2D5E5E;
+  padding: 8px 57px;
+}
+.about__btn_transparent:active {
+  background-color: #48adad;
+  opacity: 0.7;
+}
+.about__photo {
+  position: absolute;
+  padding-left: 50px;
+  max-width: 494px;
 }/*# sourceMappingURL=style.css.map */
