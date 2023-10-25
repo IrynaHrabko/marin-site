@@ -363,22 +363,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center {
-  padding-left: calc(55vw - 555px);
-  padding-right: calc(55vw - 555px);
+  padding-left: calc(55vw - 584px);
+  padding-right: calc(55vw - 584px);
 }
 
 a {
   outline: none;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: absolute;
-  width: 100%;
 }
 
 .nav__list {
@@ -398,6 +388,16 @@ header {
 }
 .nav__link:hover, .nav__link:focus {
   color: #55c4c6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+  width: 100%;
 }
 
 .offer {
@@ -444,4 +444,29 @@ header {
 .btn:active {
   opacity: 0.5;
   background-color: #208888;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 60px;
+  padding-bottom: 37px;
+}
+.services__item {
+  max-width: 300px;
+  text-align: center;
+}
+.services__icon {
+  margin-bottom: 30px;
+}
+.services__title {
+  font-size: 24px;
+  line-height: 1.33;
+  color: #2D5E5E;
+  margin: 0 0 20px;
+}
+.services__desc {
+  font-weight: 500;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
