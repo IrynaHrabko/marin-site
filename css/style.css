@@ -371,6 +371,20 @@ a {
   outline: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .nav__list {
   list-style: none;
   display: flex;
@@ -423,7 +437,6 @@ header {
 }
 
 .btn {
-  text-transform: uppercase;
   border: none;
   background: #2D5E5E;
   border-radius: 10px;
@@ -570,16 +583,60 @@ header {
   border: 1px solid #000;
   padding-top: 15px;
 }
+.form__inputTopic {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form__inputName:hover, .form__inputName:focus, .form__inputNumber:hover, .form__inputNumber:focus, .form__inputTopic:hover, .form__inputTopic:focus, .form__field:hover, .form__field:focus {
+  background-color: #bdfbfb;
+  opacity: 0.4;
+}
+.form__inputName:active, .form__inputNumber:active, .form__inputTopic:active, .form__field:active {
+  background-color: #bdfbfb;
+  opacity: 0.6;
+}
 .form__checkbox {
   grid-column: span 2;
   align-self: center;
   justify-self: center;
+  cursor: pointer;
+}
+.form__checkbox-label {
+  position: relative;
+  padding-left: 30px;
+  color: rgb(45, 94, 94);
+}
+.form__checkbox-label:before, .form__checkbox-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+.form__checkbox-label:before {
+  background: #fff;
+  border: 1px solid #2D5E5E;
+  width: 15px;
+  height: 15px;
+}
+.form__checkbox-label:after {
+  background: #2D5E5E;
+  width: 11px;
+  height: 11px;
+  left: 2px;
+  display: none;
+}
+input:checked + .form__checkbox-label:after {
+  display: block;
 }
 
 .btn_submit {
   display: flex;
-  max-width: 250px;
-  align-self: center;
+  min-width: 250px;
+  padding: 8px 74px;
   justify-self: center;
   grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */

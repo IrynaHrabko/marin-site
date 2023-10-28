@@ -44,21 +44,67 @@
     border-radius: 10px;
     border: 1px solid #000;
     padding-top: 15px;
-    
+  }
+  &__inputTopic {
+    appearance: none;
+  }
+  &__inputName,
+  &__inputNumber,
+  &__inputTopic,
+  &__field {
+    &:hover,
+    &:focus {
+      background-color: #bdfbfb;
+      opacity: 0.4;
+    }
+    &:active{
+      background-color: #bdfbfb;
+      opacity: 0.6;
+    }
   }
   &__checkbox {
     grid-column: span 2;
     align-self: center;
     justify-self: center;
-    
+    cursor: pointer;
+    &-label {
+      position: relative;
+      padding-left: 30px;
+      color: rgba(45, 94, 94, 1);
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        box-sizing: border-box;
+      }
+      &:before {
+        background: #fff;
+        border: 1px solid #2D5E5E;
+        width: 15px;
+        height: 15px;
+      }
+      &:after {
+        background: #2D5E5E;
+        width: 11px;
+        height: 11px;
+        left: 2px;
+        display: none;
+      }
+    }
+    input:checked + &-label:after {
+      display: block;
+    }
   }
 
 }
 .btn_submit {
   display: flex;
-  max-width: 250px;
-  align-self: center;
+  min-width: 250px;
+  padding: 8px 74px;
   justify-self: center;
-  
   grid-column: span 2;
 }
