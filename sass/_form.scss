@@ -1,8 +1,64 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr) .3fr .3fr;
+  gap: 35px 20px;
+  align-items: center;
+  justify-content: center;
+  
+  &__title {
+    font-size: 48px;
+    line-height: 1.5;
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  &__container {
+    align-self: flex-start;
+    justify-self: end;
+    font-size: 18px;
+    line-height: 1.33px;
+  }
+  &__container,
+  &__field {
+    font-size: 18px;
+    line-height: 1.33px;
+  }
+  &__inputName,
+  &__inputNumber,
+  &__inputTopic {
+    display: block;
+    width: 369px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: 0 0 20px;
+    padding: 8px 0 8px 20px;
+  }
+  &__field {
+    resize: none;
+    max-width: 372px;
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding-top: 15px;
+    
+  }
+  &__checkbox {
+    grid-column: span 2;
+    align-self: center;
+    justify-self: center;
+    
+  }
 
-placeholder="Введіть ваш email" required
-<label for="mail">
-            <input type="email" id="mail" name="mail" placeholder="Email" required> <br><br>
-          </label>
-            <label for="password">
-              <input type="password" id="password" name="password" placeholder="Пароль" required> <br><br>
-            </label>
+}
+.btn_submit {
+  display: flex;
+  max-width: 250px;
+  align-self: center;
+  justify-self: center;
+  
+  grid-column: span 2;
+}

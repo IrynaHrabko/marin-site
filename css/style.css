@@ -524,4 +524,62 @@ header {
   position: absolute;
   padding-left: 50px;
   max-width: 494px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr) 0.3fr 0.3fr;
+  gap: 35px 20px;
+  align-items: center;
+  justify-content: center;
+}
+.form__title {
+  font-size: 48px;
+  line-height: 1.5;
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.form__container {
+  align-self: flex-start;
+  justify-self: end;
+  font-size: 18px;
+  line-height: 1.33px;
+}
+.form__container, .form__field {
+  font-size: 18px;
+  line-height: 1.33px;
+}
+.form__inputName, .form__inputNumber, .form__inputTopic {
+  display: block;
+  width: 369px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin: 0 0 20px;
+  padding: 8px 0 8px 20px;
+}
+.form__field {
+  resize: none;
+  max-width: 372px;
+  height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding-top: 15px;
+}
+.form__checkbox {
+  grid-column: span 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn_submit {
+  display: flex;
+  max-width: 250px;
+  align-self: center;
+  justify-self: center;
+  grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */

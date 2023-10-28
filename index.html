@@ -90,30 +90,37 @@
         <img class="about__photo" src="img/about-photo.webp" alt="about-photo">
       </article>
     </section>
-    <section class="form">
+    <section class="form center">
       <h3 class="form__title">
         Записаться на прием
       </h3>
-      <article class="form__area">
-        <div class="form__item">
-          <label for="text" id="name">
-            <input type="text" placeholder="Ваше имя *" required>
-          </label>
-        </div>
-        <div class="form__item">
-          <label for="number" name="number">
-            <input type="tel:+388888888888" placeholder="Ваш телефон *" required>
-          </label>
-        </div>
-        <div class="form__item">
+      <div class="form__container">
+        <label for="name" id="name">
+          <input class="form__inputName" type="text" placeholder="Ваше имя *" required>
+        </label>
+        <label for="number" name="number">
+          <input class="form__inputNumber" type="tel:+388888888888" placeholder="Ваш телефон *" required>
+        </label>
           <label for="topic">
-            
-          </label>
-        </div>
-        <div class="form__item"></div>
-        <div class="form__item"></div>
-        <div class="form__item"></div>
-      </article>
+          <select name="topic" id="topic" class="form__inputTopic">
+            <option value="choose-topic" selected disabled>Тема встречи *</option>
+          </select>
+        </label>
+      </div>
+      
+      <label for="wishesField" >
+        <textarea name="wishesField" id="wishesField" class="form__field">
+          Пожелания
+        </textarea>
+      </label>
+      <label for="submitPrivacyPolicy" class="form__checkbox">
+        Я согласен с политикой конфиденциальности
+        <input type="checkbox" name="submitPrivacyPolicy" id="submitPrivacyPolicy">
+      </label>
+      <button type="submit" class="btn btn_submit">
+        Отправить
+      </button>
+      
     </section>
   </main>
   <footer>
