@@ -516,7 +516,7 @@ header {
   line-height: 1.33;
   text-transform: inherit;
 }
-.about__btn_ask:hover, .about__btn_askfocus {
+.about__btn_ask:hover, .about__btn_ask:focus {
   background-color: #208888;
 }
 .about__btn_ask:active {

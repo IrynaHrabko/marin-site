@@ -10,7 +10,6 @@
   color: #FFF;
 
   &__title {
-    
     font-size: 36px;
     font-weight: 700;
     line-height: 1.5;
@@ -31,7 +30,7 @@
     line-height: 1.33;
     text-transform: inherit;
     &:hover,
-    &focus {
+    &:focus {
       background-color: #208888;
     }
     &:active{
