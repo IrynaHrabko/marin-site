@@ -542,7 +542,7 @@ header {
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr) 0.3fr 0.3fr;
+  grid-template-rows: repeat(2, 1fr) 0.3fr 0.5fr;
   gap: 35px 20px;
   align-items: center;
   justify-content: center;
@@ -566,13 +566,13 @@ header {
   font-size: 18px;
   line-height: 1.33px;
 }
-.form__inputName, .form__inputNumber, .form__inputTopic {
+.form__inputName, .form__inputNumber {
   display: block;
   width: 369px;
   border-radius: 10px;
   border: 1px solid #000;
-  margin: 0 0 20px;
-  padding: 8px 0 8px 20px;
+  margin: 0 0 32px;
+  padding: 8px 20px;
 }
 .form__field {
   resize: none;
@@ -583,16 +583,11 @@ header {
   border: 1px solid #000;
   padding-top: 15px;
 }
-.form__inputTopic {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.form__inputName:hover, .form__inputName:focus, .form__inputNumber:hover, .form__inputNumber:focus, .form__inputTopic:hover, .form__inputTopic:focus, .form__field:hover, .form__field:focus {
+.form__inputName:hover, .form__inputName:focus, .form__inputNumber:hover, .form__inputNumber:focus, .form__field:hover, .form__field:focus {
   background-color: #bdfbfb;
   opacity: 0.4;
 }
-.form__inputName:active, .form__inputNumber:active, .form__inputTopic:active, .form__field:active {
+.form__inputName:active, .form__inputNumber:active, .form__field:active {
   background-color: #bdfbfb;
   opacity: 0.6;
 }
@@ -632,11 +627,50 @@ header {
 input:checked + .form__checkbox-label:after {
   display: block;
 }
+.form__input-wrap {
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+}
+.form__input-wrap select {
+  border: none;
+  background: none;
+  padding: 8px 20px;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form__input-wrap_select:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sort-down.svg) center no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  pointer-events: none;
+}
+.form__input-wrap_select:focus-within:before {
+  transform: scale(1, -1);
+}
+.form__input-wrap_select:focus, .form__input-wrap_select:hover {
+  background-color: #bdfbfb;
+  opacity: 0.4;
+}
+.form__input-wrap_select:active {
+  background-color: #bdfbfb;
+  opacity: 0.6;
+}
 
 .btn_submit {
   display: flex;
   min-width: 250px;
   padding: 8px 74px;
   justify-self: center;
+  align-self: flex-start;
   grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */
