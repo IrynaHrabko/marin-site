@@ -489,7 +489,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: row;
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -499,18 +498,16 @@ header {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin: 0 0 50px;
 }
 .about__desc {
   max-width: 625px;
+  width: 100%;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 0px;
-  margin-bottom: 43px;
+  margin: 0 50px 35px 0;
 }
 .about__btn_ask {
-  margin-right: 30px;
   padding: 8px 34px;
   font-size: 18px;
   line-height: 1.33;
@@ -524,6 +521,7 @@ header {
   opacity: 0.7;
 }
 .about__btn_transparent {
+  margin: 0 30px 0 0;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 10px;
   border: 3px solid #2D5E5E;
@@ -535,8 +533,7 @@ header {
 }
 .about__photo {
   position: absolute;
-  padding-left: 50px;
-  max-width: 494px;
+  max-width: 495px;
 }
 
 .form {
