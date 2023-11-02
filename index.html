@@ -79,7 +79,7 @@
         Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
       </p>
       <div class="about__btns">
-        <button class="btn btn_transparent ">
+        <button class="btn btn_transparent">
           Задать вопрос
         </button>
         <a href="#" class="btn">
@@ -87,6 +87,40 @@
         </a>
       </div>
       <img class="about__photo" src="img/about-photo.webp" alt="about-photo">
+    </section>
+    <section class="form center">
+      <h3 class="form__title">
+        Записаться на прием
+      </h3>
+      <div class="form__container">
+        <label for="name" id="name">
+          <input class="form__inputName" type="text" placeholder="Ваше имя *" required>
+        </label>
+        <label for="number" name="number">
+          <input class="form__inputNumber" type="tel:+388888888888" placeholder="Ваш телефон *" required>
+        </label>
+        <label class="form__input-wrap form__input-wrap_select">
+          <select name="select">
+            <option value="choose-topic" selected disabled>Тема встречи *</option>
+          </select>
+        </label>
+      </div>
+      
+      <label for="wishesField">
+        <textarea name="wishesField" id="wishesField" class="form__field">
+          Пожелания
+        </textarea>
+      </label>
+      <label class="form__checkbox">
+        <input type="checkbox" name="submitPrivacyPolicy" value="checkbox" class="visually-hidden">
+        <span class="form__checkbox-label">
+          Я согласен с политикой конфиденциальности
+        </span>
+      </label>
+      <button type="submit" class="btn btn_submit">
+        Отправить
+      </button>
+      
     </section>
   </main>
   <footer>

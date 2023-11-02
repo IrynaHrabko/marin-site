@@ -363,8 +363,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center {
-  padding-left: calc(55vw - 600px);
-  padding-right: calc(55vw - 595px);
+  padding-left: calc(50vw - 600px);
+  padding-right: calc(50vw - 595px);
 }
 
 a {
