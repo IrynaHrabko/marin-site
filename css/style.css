@@ -580,14 +580,6 @@ header {
   border: 1px solid #000;
   padding-top: 15px;
 }
-.form__inputName:hover, .form__inputName:focus, .form__inputNumber:hover, .form__inputNumber:focus, .form__field:hover, .form__field:focus {
-  background-color: #bdfbfb;
-  opacity: 0.4;
-}
-.form__inputName:active, .form__inputNumber:active, .form__field:active {
-  background-color: #bdfbfb;
-  opacity: 0.6;
-}
 .form__checkbox {
   grid-column: span 2;
   align-self: center;
@@ -653,14 +645,6 @@ input:checked + .form__checkbox-label:after {
 }
 .form__input-wrap_select:focus-within:before {
   transform: scale(1, -1);
-}
-.form__input-wrap_select:focus, .form__input-wrap_select:hover {
-  background-color: #bdfbfb;
-  opacity: 0.4;
-}
-.form__input-wrap_select:active {
-  background-color: #bdfbfb;
-  opacity: 0.6;
 }
 
 .btn_submit {

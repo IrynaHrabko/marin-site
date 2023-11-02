@@ -45,19 +45,6 @@
     padding-top: 15px;
   }
 
-  &__inputName,
-  &__inputNumber,
-  &__field {
-    &:hover,
-    &:focus {
-      background-color: #bdfbfb;
-      opacity: 0.4;
-    }
-    &:active{
-      background-color: #bdfbfb;
-      opacity: 0.6;
-    }
-  }
   &__checkbox {
     grid-column: span 2;
     align-self: center;
@@ -126,20 +113,9 @@
           transform: scale(1, -1);
         }
       }
-      &:focus,
-      &:hover {
-        background-color: #bdfbfb;
-        opacity: 0.4;
-      }
-      &:active {
-        background-color: #bdfbfb;
-        opacity: 0.6;
-      }
     }
   }
 }
-
-
 .btn_submit {
   display: flex;
   min-width: 250px;
