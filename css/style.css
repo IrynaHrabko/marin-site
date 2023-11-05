@@ -680,6 +680,8 @@ input:checked + .form__checkbox-label:after {
   display: flex;
   justify-content: space-between;
   gap: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .counters__item {
   line-height: 1.5;
@@ -699,4 +701,51 @@ input:checked + .form__checkbox-label:after {
 }
 .counters__desc {
   font-weight: 500;
+}
+
+.reviews {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.reviews__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 43px 20px;
+}
+.reviews__review {
+  background-color: rgb(173, 221, 222);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+.reviews__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+.reviews__reviewer {
+  color: #2D5E5E;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  margin-top: 43px;
+}
+.reviews__photo {
+  margin-top: 20px;
+}
+.reviews__desc {
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 30px 25px 20px;
+}
+.reviews__toggler_right {
+  rotate: 180deg;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 32px 18px;
 }/*# sourceMappingURL=style.css.map */
