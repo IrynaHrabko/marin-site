@@ -1,0 +1,35 @@
+.news {
+  background-image: url(../img/new-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overLay;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 28px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 84px 48px;
+    color: #fff;
+  }
+  &__image {
+    margin: 0 0 24px 0;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 54px;
+    margin: 0 0 54px 0;
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    max-width: 334px;
+    width: 100%;
+    margin: 0;
+  }
+  
+}

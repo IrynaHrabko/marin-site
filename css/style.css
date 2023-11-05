@@ -693,16 +693,17 @@ input:checked + .form__checkbox-label:after {
   text-align: center;
   font-size: 48px;
   font-weight: 900;
-  margin-bottom: 14px;
+  margin: 0 0 14px 0;
 }
 .counters__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.33;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 .counters__desc {
   font-weight: 500;
+  margin: 0;
 }
 
 .reviews {
@@ -750,4 +751,39 @@ input:checked + .form__checkbox-label:after {
   display: flex;
   justify-content: center;
   gap: 32px 18px;
+}
+
+.news {
+  background-image: url(../img/new-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overLay;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 28px;
+}
+.news__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 84px 48px;
+  color: #fff;
+}
+.news__image {
+  margin: 0 0 24px 0;
+}
+.news__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 54px;
+  margin: 0 0 54px 0;
+}
+.news__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+  max-width: 334px;
+  width: 100%;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
