@@ -34,15 +34,27 @@
     border: 1px solid #000;
     margin: 0 0 32px;
     padding: 8px 20px;
+    &::placeholder {
+      color: #000;;
+    }
   }
-  &__field {
-    resize: none;
-    max-width: 372px;
-    height: 180px;
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #000;
-    padding-top: 15px;
+
+  &__input-textarea {
+    textarea {
+      resize: none;
+      width: 372px;
+      height: 180px;
+      padding-top: 8px;
+      padding-left: 20px;
+      border-radius: 10px;
+      border: 1px solid #000;
+      font-size: 18px;
+      line-height: 1.33;
+      cursor: text;
+      &::placeholder {
+        color: #000;;
+      }
+    }
   }
 
   &__checkbox {
@@ -115,6 +127,7 @@
       }
     }
   }
+  
 }
 .btn_submit {
   display: flex;

@@ -571,14 +571,29 @@ header {
   margin: 0 0 32px;
   padding: 8px 20px;
 }
-.form__field {
+.form__inputName::-moz-placeholder, .form__inputNumber::-moz-placeholder {
+  color: #000;
+}
+.form__inputName::placeholder, .form__inputNumber::placeholder {
+  color: #000;
+}
+.form__input-textarea textarea {
   resize: none;
-  max-width: 372px;
+  width: 372px;
   height: 180px;
-  width: 100%;
+  padding-top: 8px;
+  padding-left: 20px;
   border-radius: 10px;
   border: 1px solid #000;
-  padding-top: 15px;
+  font-size: 18px;
+  line-height: 1.33;
+  cursor: text;
+}
+.form__input-textarea textarea::-moz-placeholder {
+  color: #000;
+}
+.form__input-textarea textarea::placeholder {
+  color: #000;
 }
 .form__checkbox {
   grid-column: span 2;
