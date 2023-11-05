@@ -669,4 +669,34 @@ input:checked + .form__checkbox-label:after {
   justify-self: center;
   align-self: flex-start;
   grid-column: span 2;
+}
+
+.counters {
+  background-image: url(../img/counter-bg.webp);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overLay;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+.counters__item {
+  line-height: 1.5;
+  color: #FFF;
+  text-align: center;
+  max-width: 300px;
+}
+.counters__subtitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+}
+.counters__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.counters__desc {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
