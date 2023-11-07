@@ -902,4 +902,30 @@ input:checked + .form__checkbox-label:after {
 }
 .form-for-sale__container button {
   margin: 0;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2D5E5E;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 500;
+  line-height: 1.71;
+}
+.footer__logo {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=style.css.map */
