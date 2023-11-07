@@ -878,4 +878,28 @@ input:checked + .form__checkbox-label:after {
 }
 .contacts__link:active {
   color: #55c4c6;
+}
+
+.form-for-sale {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.form-for-sale__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 60px 0;
+}
+.form-for-sale__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.form-for-sale__container input {
+  min-height: 40px;
+  margin-bottom: 0;
+}
+.form-for-sale__container button {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
