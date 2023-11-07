@@ -1,0 +1,54 @@
+.faq {
+  padding-top: 51px;
+  padding-bottom: 40px;
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 78px;
+  }
+  &__container {
+    margin-bottom: 20px;
+    max-width: 936px;
+    width: 100%;
+  }
+  &__toggler {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__marker {
+    display: block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+  }
+  &__item {
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33; 
+  }
+  &__content {
+    padding-left: 36px;
+    margin-top: 20px;
+  }
+  &__container[open] {
+    margin-bottom: 40px;
+    .faq {
+      &__marker svg {
+        fill: #2D5E5E;
+        rotate: 45deg;
+      }
+      &__item {
+        color: #2D5E5E;
+      }
+    }
+  }
+  &__desc {
+    color: #000;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}

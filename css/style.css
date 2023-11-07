@@ -786,4 +786,57 @@ input:checked + .form__checkbox-label:after {
   max-width: 334px;
   width: 100%;
   margin: 0;
+}
+
+.faq {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+.faq__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 78px;
+}
+.faq__container {
+  margin-bottom: 20px;
+  max-width: 936px;
+  width: 100%;
+}
+.faq__toggler {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.faq__marker {
+  display: block;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+}
+.faq__item {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.faq__content {
+  padding-left: 36px;
+  margin-top: 20px;
+}
+.faq__container[open] {
+  margin-bottom: 40px;
+}
+.faq__container[open] .faq__marker svg {
+  fill: #2D5E5E;
+  rotate: 45deg;
+}
+.faq__container[open] .faq__item {
+  color: #2D5E5E;
+}
+.faq__desc {
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
