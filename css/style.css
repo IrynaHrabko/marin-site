@@ -437,19 +437,26 @@ header {
 }
 
 .btn {
-  border: none;
+  border: 3px solid transparent;
   background: #2D5E5E;
   border-radius: 10px;
-  padding: 8px 42px;
+  padding: 6px 15px;
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
   display: inline-flex;
-  align-items: center;
+  min-width: 250px;
+  justify-content: center;
   gap: 10px;
   font-size: 18px;
   line-height: 1.33;
-  cursor: pointer;
+}
+.btn_transparent {
+  border-color: #2D5E5E;
+  background: transparent;
+}
+.btn_transparent:hover, .btn_transparent:focus {
+  background-color: #208888;
 }
 .btn:hover, .btn:focus {
   opacity: 0.7;
@@ -485,55 +492,34 @@ header {
 }
 
 .about {
-  background-image: url(../img/rectangle.webp);
-  background-repeat: no-repeat;
+  background-image: url(../img/about-bg.webp);
   background-size: cover;
-  display: flex;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overLay;
   padding-top: 60px;
   padding-bottom: 60px;
   color: #FFF;
-}
-.about__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0 0 50px;
-}
-.about__desc {
-  max-width: 625px;
-  width: 100%;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0 50px 35px 0;
-}
-.about__btn_ask {
-  padding: 8px 34px;
-  font-size: 18px;
-  line-height: 1.33;
-  text-transform: inherit;
-}
-.about__btn_ask:hover, .about__btn_ask:focus {
-  background-color: #208888;
-}
-.about__btn_ask:active {
-  background-color: #48adad;
-  opacity: 0.7;
-}
-.about__btn_transparent {
-  margin: 0 30px 0 0;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 10px;
-  border: 3px solid #2D5E5E;
-  padding: 8px 57px;
-}
-.about__btn_transparent:active {
-  background-color: #48adad;
-  opacity: 0.7;
+  display: grid;
+  grid-template-columns: 1fr 494px;
+  grid-template-rows: auto 1fr auto;
+  gap: 35px 50px;
 }
 .about__photo {
-  position: absolute;
-  max-width: 495px;
+  grid-row: 1/4;
+  grid-column: 2/3;
+}
+.about__title, .about__desc {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.about__title {
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+.about__btns {
+  display: flex;
+  gap: 30px;
 }
 
 .form {
