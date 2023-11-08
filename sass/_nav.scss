@@ -3,6 +3,17 @@
     list-style: none;
     display: flex;
     gap: 15px;
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+      padding: 30px;
+    }
   }
   &__link {
     text-decoration: none;
@@ -18,4 +29,15 @@
       color: #55c4c6;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    #open_menu:checked {
+      & ~ .nav__list {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+      }
+    }
+  }
+
 }

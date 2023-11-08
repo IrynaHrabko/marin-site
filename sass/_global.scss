@@ -1,6 +1,17 @@
 * {
   box-sizing: border-box;
 }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.burger-menu {
+  color: #2D5E5E;
+  font-size: 36px;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -26,4 +37,19 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .center {
+    padding-left: calc(50vw - 360px);
+    padding-right: calc(50vw - 360px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .center {
+    padding-left: calc(50vw - 195px);
+    padding-right: calc(50vw - 195px);
+  }
 }
