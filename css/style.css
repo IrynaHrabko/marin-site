@@ -659,13 +659,22 @@ header {
   margin-bottom: 20px;
   padding: 0px;
 }
+@media screen and (max-width: 1200px) {
+  .form__title {
+    font-size: 36px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__title {
+    font-size: 30px;
+    margin: 0;
+    grid-column: unset;
+  }
+}
 .form__container {
   align-self: flex-start;
   justify-self: end;
-  font-size: 18px;
-  line-height: 1.33px;
-}
-.form__container, .form__field {
   font-size: 18px;
   line-height: 1.33px;
 }
@@ -700,6 +709,11 @@ header {
 }
 .form__input-textarea textarea::placeholder {
   color: #000;
+}
+@media screen and (max-width: 768px) {
+  .form__input-textarea textarea {
+    grid-column: unset;
+  }
 }
 .form__checkbox {
   grid-column: span 2;
@@ -767,6 +781,16 @@ input:checked + .form__checkbox-label:after {
 .form__input-wrap_select:focus-within:before {
   transform: scale(1, -1);
 }
+@media screen and (max-width: 768px) {
+  .form__input-wrap {
+    grid-column: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
 
 .btn_submit {
   display: flex;
@@ -777,6 +801,11 @@ input:checked + .form__checkbox-label:after {
   grid-column: span 2;
 }
 
+@media screen and (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
 .counters {
   background-image: url(../img/counter-bg.webp);
   background-size: cover;
@@ -801,15 +830,49 @@ input:checked + .form__checkbox-label:after {
   font-weight: 900;
   margin: 0 0 14px 0;
 }
+@media screen and (max-width: 1200px) {
+  .counters__subtitle {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counters__subtitle {
+    font-size: 30px;
+  }
+}
 .counters__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.33;
   margin: 0 0 20px 0;
 }
+@media screen and (max-width: 1200px) {
+  .counters__title {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counters__title {
+    font-size: 20px;
+  }
+}
 .counters__desc {
   font-weight: 500;
   margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  .counters {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counters {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .reviews {
