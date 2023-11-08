@@ -18,6 +18,14 @@
     font-weight: 700;
     line-height: 1.5;
     text-align: center;
+    @media screen and (max-width: 1200px) {
+      font-size: 36px;
+      margin-top: 0;
+    }
+    @media screen and (max-width: 786px) {
+      font-size: 30px;
+      margin-top: 0;
+    }
   }
   &__reviewer {
     color: #2D5E5E;

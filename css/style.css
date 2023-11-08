@@ -897,6 +897,18 @@ input:checked + .form__checkbox-label:after {
   line-height: 1.5;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .reviews__title {
+    font-size: 36px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 786px) {
+  .reviews__title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
 .reviews__reviewer {
   color: #2D5E5E;
   font-size: 18px;
@@ -938,6 +950,13 @@ input:checked + .form__checkbox-label:after {
   gap: 84px 48px;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .news__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 25px;
+  }
+}
 .news__image {
   margin: 0 0 24px 0;
 }
@@ -948,6 +967,18 @@ input:checked + .form__checkbox-label:after {
   margin-bottom: 54px;
   margin: 0 0 54px 0;
 }
+@media screen and (max-width: 1200px) {
+  .news__title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
 .news__subtitle {
   font-size: 24px;
   font-weight: 700;
@@ -955,6 +986,16 @@ input:checked + .form__checkbox-label:after {
   max-width: 334px;
   width: 100%;
   margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  .news__subtitle {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news__subtitle {
+    font-size: 20px;
+  }
 }
 
 .faq {
@@ -967,6 +1008,19 @@ input:checked + .form__checkbox-label:after {
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 78px;
+}
+@media screen and (max-width: 1200px) {
+  .faq__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
 }
 .faq__container {
   margin-bottom: 20px;
@@ -990,9 +1044,29 @@ input:checked + .form__checkbox-label:after {
   font-weight: 700;
   line-height: 1.33;
 }
+@media screen and (max-width: 1200px) {
+  .faq__item {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq__item {
+    font-size: 20px;
+  }
+}
 .faq__content {
   padding-left: 36px;
   margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .faq__content {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq__content {
+    font-size: 16px;
+  }
 }
 .faq__container[open] {
   margin-bottom: 40px;
@@ -1008,6 +1082,12 @@ input:checked + .form__checkbox-label:after {
   color: #000;
   font-weight: 500;
   line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .contacts {
