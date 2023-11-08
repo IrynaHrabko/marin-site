@@ -1,4 +1,7 @@
 .about {
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
   background-image: url(../img/about-bg.webp);
   background-size: cover;
   background-color: rgba(0,0,0,.7);
@@ -13,12 +16,20 @@
   &__photo {
     grid-row: 1 / 4;
     grid-column: 2 / 3;
+    @media screen and (max-width: 1200px) {
+      grid-column: unset;
+      grid-row: 2 / 3;
+      margin: auto;
+    }
   }
   &__title,
   &__desc {
     margin: 0;
     line-height: 1.5;
     font-weight: 700;
+    @media screen and (max-width: 1200px) {
+      text-wrap: balance;
+    }
   }
   &__title {
     margin-bottom: 15px;
@@ -27,5 +38,12 @@
   &__btns {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
   }
 }
