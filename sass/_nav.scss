@@ -29,16 +29,14 @@
       color: #55c4c6;
     }
   }
-  
 
   @media screen and (max-width: 767px) {
     #open_menu:checked {
       & ~ .nav__list {
         display: flex;
         flex-direction: column;
-        height: 30vh;
+        height: 29vh;
       }
     }
   }
-
 }

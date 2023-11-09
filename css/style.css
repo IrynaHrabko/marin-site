@@ -359,8 +359,14 @@ template {
 }
 
 .burger-menu {
-  color: #2D5E5E;
-  font-size: 36px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: block;
+    color: #2D5E5E;
+    font-size: 36px;
+  }
 }
 
 body {
@@ -445,7 +451,7 @@ img {
   .nav #open_menu:checked ~ .nav__list {
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    height: 29vh;
   }
 }
 
