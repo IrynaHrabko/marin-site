@@ -553,6 +553,11 @@ header {
   opacity: 0.5;
   background-color: #208888;
 }
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+  }
+}
 
 .services {
   display: flex;
