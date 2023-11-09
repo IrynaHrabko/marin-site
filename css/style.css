@@ -661,15 +661,15 @@ header {
 }
 @media screen and (max-width: 1200px) {
   .form__title {
+    grid-column: 1/2;
+    order: -1;
     font-size: 36px;
-    margin: 0;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {
   .form__title {
     font-size: 30px;
-    margin: 0;
-    grid-column: unset;
   }
 }
 .form__container {
@@ -677,6 +677,17 @@ header {
   justify-self: end;
   font-size: 18px;
   line-height: 1.33px;
+}
+@media screen and (max-width: 1200px) {
+  .form__container {
+    order: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__container {
+    font-size: 16px;
+  }
 }
 .form__inputName, .form__inputNumber {
   display: block;
@@ -712,7 +723,12 @@ header {
 }
 @media screen and (max-width: 768px) {
   .form__input-textarea textarea {
-    grid-column: unset;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .form__input-textarea {
+    margin: auto;
   }
 }
 .form__checkbox {
@@ -720,6 +736,16 @@ header {
   align-self: center;
   justify-self: center;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .form__checkbox {
+    grid-column: 1/2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__checkbox {
+    font-size: 14px;
+  }
 }
 .form__checkbox-label {
   position: relative;
@@ -781,14 +807,10 @@ input:checked + .form__checkbox-label:after {
 .form__input-wrap_select:focus-within:before {
   transform: scale(1, -1);
 }
-@media screen and (max-width: 768px) {
-  .form__input-wrap {
-    grid-column: unset;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .form {
     grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr repeat(2, 1fr) 0.3fr 0.5fr;
   }
 }
 
@@ -800,12 +822,12 @@ input:checked + .form__checkbox-label:after {
   align-self: flex-start;
   grid-column: span 2;
 }
-
-@media screen and (max-width: 768px) {
-  .form {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 1200px) {
+  .btn_submit {
+    grid-column: 1/2;
   }
 }
+
 .counters {
   background-image: url(../img/counter-bg.webp);
   background-size: cover;

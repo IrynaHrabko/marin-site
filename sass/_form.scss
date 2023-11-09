@@ -15,13 +15,13 @@
     margin-bottom: 20px;
     padding: 0px;
     @media screen and (max-width: 1200px) {
+      grid-column: 1 / 2;
+      order: -1;
       font-size: 36px;
-      margin: 0;
+      margin-top: 40px;
     }
     @media screen and (max-width: 768px) {
       font-size: 30px;
-      margin: 0;
-      grid-column: unset;
     }
   }
   &__container {
@@ -29,8 +29,15 @@
     justify-self: end;
     font-size: 18px;
     line-height: 1.33px;
+    @media screen and (max-width: 1200px) {
+      order: 0;
+      margin: auto;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
-  
+
   &__inputName,
   &__inputNumber {
     display: block;
@@ -57,11 +64,14 @@
       line-height: 1.33;
       cursor: text;
       &::placeholder {
-        color: #000;;
+        color: #000;
       }
       @media screen and (max-width: 768px) {
-        grid-column: unset;
+        font-size: 16px;
       }
+    }
+    @media screen and (max-width: 1200px) {
+      margin: auto;
     }
   }
 
@@ -70,6 +80,12 @@
     align-self: center;
     justify-self: center;
     cursor: pointer;
+    @media screen and (max-width: 1200px) {
+      grid-column: 1 / 2;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
     &-label {
       position: relative;
       padding-left: 30px;
@@ -134,13 +150,10 @@
         }
       }
     }
-    @media screen and (max-width: 768px) {
-      grid-column: unset;
-    }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr;
-    
+    grid-template-rows: .5fr repeat(2, 1fr) .3fr .5fr;
   }
 }
 .btn_submit {
@@ -150,12 +163,8 @@
   justify-self: center;
   align-self: flex-start;
   grid-column: span 2;
+  @media screen and (max-width: 1200px) {
+    grid-column: 1 / 2;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .form {
-    grid-template-columns: 1fr;
-  }
-  
-  
-}
