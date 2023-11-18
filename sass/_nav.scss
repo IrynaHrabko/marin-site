@@ -4,7 +4,6 @@
     display: flex;
     gap: 15px;
     @media screen and (max-width: 767px) {
-      display: none;
       position: absolute;
       top: 100px;
       left: 0;
@@ -12,7 +11,9 @@
       flex-direction: column;
       justify-content: center;
       background: #fff;
-      padding: 30px;
+      padding: 40px;
+      translate: 100% 0;
+      transition: .5s;
     }
   }
   &__link {
@@ -20,23 +21,84 @@
     color: #85AAAB;
     font-size: 18px;
     font-weight: 700;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #85AAAB;
+      scale: 0 1;
+      transition: .3s;
+      transform-origin: top left;
+    }
+
     &_active {
       color: #6DE1E3;
-      border-bottom: 2px solid currentColor;
     }
     &:hover,
     &:focus {
       color: #55c4c6;
+      &:before {
+        scale: 1 1;
+      }
     }
   }
 
   @media screen and (max-width: 767px) {
     #open_menu:checked {
       & ~ .nav__list {
-        display: flex;
-        flex-direction: column;
-        height: 29vh;
+        translate: 0 0;
       }
+      & ~ .nav__toggler {
+        span {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            top: 50%;
+            rotate: 225deg;
+          }
+          &:nth-child(2) {
+            rotate: -225deg;
+          }
+        }
+      }
+    }
+  }
+  &__toggler {
+    display: none;
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: 30px;
+      height: 15px;
+      position: relative;
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #2D5E5E;
+        border-radius: 10px;
+        position: absolute;
+        translate: -50% -50%;
+        left: 50%;
+        transition: .5s;
+
+        &:nth-child(1) {
+          top: 0;
+          height: 2px;
+        }
+        &:nth-child(2) {
+          top: 51%;
+        }
+        &:nth-child(3) {
+          top: 101%;
+        }
+      }
+
     }
   }
 }
