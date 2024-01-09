@@ -37,7 +37,7 @@
       transform-origin: top left;
     }
 
-    &_active {
+    &:active {
       color: #6DE1E3;
     }
     &:hover,

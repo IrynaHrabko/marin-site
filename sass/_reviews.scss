@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 70px;
   &__container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,12 +43,23 @@
     line-height: 1.5;
     margin: 30px 25px 20px;
   }
-  &__toggler_right {
-    rotate: 180deg;
-  }
 }
 .wrapper {
   display: flex;
   justify-content: center;
   gap: 32px 18px;
 } 
+
+.slider {
+  
+  &-slide {
+    display: none;
+  }
+}
+
+.slider-slide.active {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 43px 20px;
+}

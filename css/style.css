@@ -444,7 +444,7 @@ img {
   transition: 0.3s;
   transform-origin: top left;
 }
-.nav__link_active {
+.nav__link:active {
   color: #6DE1E3;
 }
 .nav__link:hover, .nav__link:focus {
@@ -957,6 +957,7 @@ input:checked + .form__checkbox-label:after {
   padding-bottom: 70px;
 }
 .reviews__container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1001,14 +1002,22 @@ input:checked + .form__checkbox-label:after {
   line-height: 1.5;
   margin: 30px 25px 20px;
 }
-.reviews__toggler_right {
-  rotate: 180deg;
-}
 
 .wrapper {
   display: flex;
   justify-content: center;
   gap: 32px 18px;
+}
+
+.slider-slide {
+  display: none;
+}
+
+.slider-slide.active {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 43px 20px;
 }
 
 .news {
